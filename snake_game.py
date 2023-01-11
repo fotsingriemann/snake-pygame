@@ -4,7 +4,7 @@ from enum import Enum
 from collections import namedtuple
 
 pygame.init()
-font = pygame.font.Font('fonts/consolas.ttf', 25)
+font = pygame.font.Font('fonts/Monaco.ttf', 25)
 #font = pygame.font.SysFont('arial', 25)
 
 class Direction(Enum):
@@ -23,7 +23,7 @@ BLUE2 = (0, 100, 255)
 BLACK = (0,0,0)
 
 BLOCK_SIZE = 20
-SPEED = 20
+SPEED = 10
 
 class SnakeGame:
     
@@ -32,7 +32,7 @@ class SnakeGame:
         self.h = h
         # init display
         self.display = pygame.display.set_mode((self.w, self.h))
-        pygame.display.set_caption('Snake')
+        pygame.display.set_caption('Snake game')
         self.clock = pygame.time.Clock()
         
         # init game state
